@@ -1,0 +1,28 @@
+{% extends "base_generic.html" %}
+{% block content %}
+
+<h1>Report Number: {{ big_foot_repot.report_number }}</h1>
+<br>
+<p><strong>Report Class:</strong> {{ big_foot_report.report_class}}</p>
+<p><strong>State:</strong> {{ big_foot_report.state}}</p>
+<p><strong>Season:</strong> {{ big_foot_report.season}}</p>
+<p><strong>Date:</strong> {{ big_foot_report.date}}{{ big_foot_report.month}}{{ big_foot_report.year}}</p>
+<p><strong>Environment:</strong> {{ big_foot_report.environment}}</p>
+<p><strong>Location Details:</strong> {{ big_foot_report.location_details}}</p>
+<br>
+<p><strong>Observed:</strong> {{ big_foot_report.observed}}</p>
+<br>
+<p><strong>Also Noticed:</strong> {{ big_foot_report.also_noticed}}</p>
+<br>
+<p><strong>Other Witnesses:</strong> {{ big_foot_report.other_witnesses}}</p>
+<br>
+<p><strong>Other Stories:</strong> {{ big_foot_report.other_stories}}</p>
+<br>
+<p><strong>Time and Conditions:</strong> {{ big_foot_report.time_and_conditions}}</p>
+<p><strong>County:</strong> {{ big_foot_report.county}}</p>
+<p><strong>Nearest Town:</strong> {{ big_foot_report.nearest_town}}</p>
+<p><strong>Nearest Road:</strong> {{ big_foot_report.nearest_road}}</p>
+<br>
+<p><strong>AG References:</strong> {{ big_foot_report.a_g_references}}</p>
+
+{% endblock %}
