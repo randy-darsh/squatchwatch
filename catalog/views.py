@@ -7,12 +7,6 @@ def index(request):
 
 class BigFootReportListView(generic.ListView):
   model = BigFootReport
-
+  paginate_by = 30
 class BigFootReportDetailView(generic.DetailView):
   model = BigFootReport
-
-  def get_context_data(self, **kwargs):
-        context = super(BigFootReportListView, self).get_context_data(**kwargs)
-        # Create any data and add it to the context
-        context['some_data'] = 'This is just some data'
-        return context
