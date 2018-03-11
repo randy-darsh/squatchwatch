@@ -8,5 +8,10 @@ def index(request):
 class BigFootReportListView(generic.ListView):
   model = BigFootReport
   paginate_by = 30
+
 class BigFootReportDetailView(generic.DetailView):
   model = BigFootReport
+
+class BigFootReportCreate(generic.CreateView):
+  model = BigFootReport
+  fields = "__all__"
