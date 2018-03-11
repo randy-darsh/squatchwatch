@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=6=pmi54=*2yimrs97@8=a7%181rpa(-+h*mq*(qqss+m(6&60'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['squatchwatch.herokuapp.com', 'localhost:8000']
 
 
 # Application definition
