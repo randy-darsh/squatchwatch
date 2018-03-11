@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '=6=pmi54=*2yimrs97@8=a7%181rpa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = ['squatchwatch.herokuapp.com', 'localhost:8000']
+ALLOWED_HOSTS = ['squatchwatch.herokuapp.com', 'localhost']
 
 
 # Application definition
